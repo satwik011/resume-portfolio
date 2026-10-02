@@ -1,0 +1,19 @@
+.band { border-top: 2px solid var(--ink); background: var(--white); }
+.section { padding-top: 110px; padding-bottom: 110px; display: flex; flex-direction: column; gap: 44px; }
+.head { display: flex; flex-direction: column; gap: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px; }
+.card {
+  display: flex; flex-direction: column; gap: 16px; padding: 26px;
+  border: 2px solid var(--ink); border-radius: 24px; box-shadow: 6px 6px 0 var(--ink);
+}
+.cardHead { display: flex; justify-content: space-between; align-items: center; }
+.name { font-size: 26px; }
+.num { font-weight: 800; font-size: 13px; letter-spacing: .12em; }
+.items { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+
+.lav { background: var(--lav); }
+.yellow { background: var(--yellow); }
+.orange { background: var(--orange); }
+.paper { background: var(--paper); }
+
+@media (max-width: 760px) { .section { padding-top: 80px; padding-bottom: 80px; } }

@@ -1,0 +1,17 @@
+.footer { position: relative; overflow: hidden; border-top: 2px solid var(--ink); background: var(--accent); color: var(--white); }
+.main { padding-top: 130px; padding-bottom: 120px; display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
+.title { font-size: clamp(56px, 9vw, 132px); line-height: .88; letter-spacing: -.045em; }
+.text { font-size: 21px; line-height: 1.5; max-width: 30em; }
+.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.road { position: relative; height: 70px; border-top: 2px solid var(--ink); background: var(--ink); }
+.lane { position: absolute; left: 0; right: 0; top: 50%; height: 3px; background: repeating-linear-gradient(90deg, var(--paper) 0 26px, transparent 26px 52px); }
+.car { position: absolute; left: 0; top: 12px; animation: cruise 9s linear infinite; }
+@keyframes cruise { from { transform: translateX(-120px); } to { transform: translateX(calc(100vw + 120px)); } }
+
+.base { padding-top: 22px; padding-bottom: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .main { padding-top: 90px; padding-bottom: 80px; }
+  .text { font-size: 19px; }
+}

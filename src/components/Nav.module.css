@@ -1,0 +1,19 @@
+.nav { position: sticky; top: 14px; z-index: 40; margin-top: 14px; }
+.inner {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 8px 8px 8px 22px;
+  border: 2px solid var(--ink); border-radius: 999px;
+  background: rgba(255, 255, 255, .86);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.logo { font-size: 22px; text-decoration: none; }
+.star { color: var(--orange); }
+.links { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; font-weight: 700; font-size: 15px; }
+.link { padding: 10px 14px; border-radius: 999px; text-decoration: none; transition: background .2s; }
+.link:hover { background: var(--lav); color: var(--ink); }
+.cta { min-height: 44px; padding: 0 20px; border-radius: 999px; }
+
+@media (max-width: 560px) {
+  .inner { padding-left: 16px; }
+  .link { display: none; }
+}

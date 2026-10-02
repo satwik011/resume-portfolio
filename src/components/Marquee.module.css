@@ -1,0 +1,14 @@
+.root {
+  border-block: 2px solid var(--ink); background: var(--ink);
+  padding: 18px 0; overflow: hidden;
+  transform: rotate(-1.2deg); margin: 0 -20px;
+}
+.track {
+  display: flex; gap: 40px; width: max-content;
+  font-size: 30px; color: var(--paper); white-space: nowrap;
+  animation: slide 30s linear infinite;
+}
+.star { color: var(--orange); }
+@keyframes slide { to { transform: translateX(-50%); } }
+
+@media (max-width: 760px) { .track { font-size: 24px; gap: 28px; } }
